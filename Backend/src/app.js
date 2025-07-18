@@ -4,6 +4,6 @@ const songRoutes = require("./routes/song.routes");
 const app = express();
 app.use(express.json());
 
-app.use("/song", songRoutes);
+app.use("/", songRoutes);
 module.exports = app;
 console.log("App loaded, route /song registered...");
