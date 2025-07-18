@@ -1,17 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import FacialExpression from './components/FacialExpression'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+import FacialExpression from "./components/facialExpression/FacialExpression";
+import MoodSongs from './components/songs/Songs'
+const App = () => {
   return (
     <>
-     <FacialExpression />
+      <FacialExpression />
+      <MoodSongs />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

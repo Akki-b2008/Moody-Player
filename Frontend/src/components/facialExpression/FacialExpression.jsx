@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import * as faceapi from "face-api.js";
-import "./FacialExpression.css"
+import "./FacialExpression.css";
 
 const FaceDetector = () => {
   const videoRef = useRef(null);
@@ -59,8 +59,11 @@ const FaceDetector = () => {
   };
 
   return (
-    <div className="webcam">
-      <video ref={videoRef} autoPlay muted  className="expression_detect"/>
+    <div className="expression_detector">
+      <div className="webcam">
+        <video ref={videoRef} autoPlay muted  />
+      </div>
+
       <button onClick={moodDetect}>Detect mood</button>
     </div>
   );
